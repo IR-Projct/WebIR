@@ -24,4 +24,14 @@ class Food extends CI_Controller {
 		$this->load->view('homepage');
 		$this->load->view('bot');
 	}
+
+	public function search()
+	{
+		$name = isset($_GET'name_search'])?$_GET['name_search']:"";
+		$this->load->model('model_gs','m');
+		$data = array("list"=>$this->m->show_list());
+		$this->load->view('top');
+		$this->load->view('list_food',$data);
+		$this->load->view('bot');
+	}
 }
