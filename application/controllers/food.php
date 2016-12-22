@@ -20,6 +20,8 @@ class Food extends CI_Controller {
 	 */
 	public function index()
 	{
+		$this->load->view('top');
 		$this->load->view('homepage');
+		$this->load->view('bot');
 	}
 }

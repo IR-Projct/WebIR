@@ -7,21 +7,13 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<div class="header">
-		<div>
-			<a href="index.html"><img src="images/logo.png" alt="Logo"></a>
-		</div>
-		<form action="index.html">
-			<input type="text" value="Search from our 10,000+ Recipes around the world" id="search">
-			<input type="submit" value="" id="searchbtn">
-		</form>
-	</div>
+
 	<div class="body">
 		<div>
 			<div class="header">
 				<ul>
 					<li class="current">
-						<a href="index.html">Home</a>
+						<a href="<?php echo base_url();?>">Home</a>
 					</li>
 					<li>
 						<a href="recipes.html">A to Z Recipes</a>
@@ -154,13 +146,6 @@
 				<a href="http://freewebsitetemplates.com/go/flickr/" target="_blank" id="flickr">Flickr</a>
 				<a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" id="googleplus">Google&#43;</a>
 			</div>
-		</div>
-	</div>
-	<div class="footer">
-		<div>
-			<p>
-				&copy; Copyright 2012. All rights reserved
-			</p>
 		</div>
 	</div>
 </body>
