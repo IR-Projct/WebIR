@@ -21,6 +21,7 @@ class Food extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('top');
+		$this->load->view('documentPreparing');
 		$this->load->view('homepage');
 		$this->load->view('bot');
 	}
@@ -34,6 +35,12 @@ class Food extends CI_Controller {
 		$data = array("data_result"=>$result);
 		$this->load->view('top');
 		$this->load->view('list_food',$data);
+		$this->load->view('bot');
+	}
+	public function answer()
+	{
+		$this->load->view('top');
+		$this->load->view('query_and_answer');
 		$this->load->view('bot');
 	}
 }
