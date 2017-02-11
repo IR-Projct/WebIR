@@ -31,4 +31,51 @@ class Food extends CI_Controller {
 		$this->load->view('query_and_answer');
 		$this->load->view('bot');
 	}
+	public function show()
+	{
+		$id=(isset($_POST["id"])?$_POST["id"]:"");
+		echo "value : ".$id;
+		$this->load->view('top');
+		$this->load->model('models');
+		$result=$this->models->show($id);
+		$data=array("data_result"=>$result);
+		$this->load->view('show',$data);
+		$this->load->view('bot');
+	}
+	public function list_n()
+	{
+		$this->load->model('models');
+		$result=$this->models->n();
+		$data=array("data_result"=>$result);
+		$this->load->view('top');
+		$this->load->view('show_list',$data);
+		$this->load->view('bot');
+	}
+	public function list_c()
+	{
+		$this->load->model('models');
+		$result=$this->models->c();
+		$data=array("data_result"=>$result);
+		$this->load->view('top');
+		$this->load->view('show_list',$data);
+		$this->load->view('bot');
+	}
+	public function list_e()
+	{
+		$this->load->model('models');
+		$result=$this->models->e();
+		$data=array("data_result"=>$result);
+		$this->load->view('top');
+		$this->load->view('show_list',$data);
+		$this->load->view('bot');
+	}
+	public function list_s()
+	{
+		$this->load->model('models');
+		$result=$this->models->s();
+		$data=array("data_result"=>$result);
+		$this->load->view('top');
+		$this->load->view('show_list',$data);
+		$this->load->view('bot');
+	}
 }

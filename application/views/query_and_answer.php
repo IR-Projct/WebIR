@@ -1,5 +1,4 @@
 <html>
-  <h3>Here is the list of relevance document</h3>
 
   <?php
     include "utility.php";
@@ -49,24 +48,32 @@
          if($rs==true){
          //var_dump($sql);
 	       //show each relevance document
-	      $arr = $rs->fetch_all(MYSQLI_ASSOC);
-	      foreach($arr as $row) {
 
-          echo '<div class="body">'.
-          				'<div id="content">'.
-          					'<div>'.
-          						'<ul>'.
-          							'<li>'.
-          								'<a href="index.html"><img src="images/fried-chicken.jpg" alt="Image"></a>'.
-          								'<div>'.
-          									'<h3><a href="featured.html">This is just a place holder</a></h3>'.
+
+	      $arr = $rs->fetch_all(MYSQLI_ASSOC);
+        echo '<div class="body">'.
+                '<div id="content">'.
+                  '<div>'.
+                    '<ul>';
+	      foreach($arr as $row) {
+          $pic=$row['img'].'.jpg';
+          echo '<form method="POST" action="'.site_url('food/show/'.$row['id']).'">';
+          //echo "<form method=".'POST'."action=".site_url('food/show'.$row['id']).'>';
+          							echo '<li>';
+                        echo "<a href=\"index.html\">".
+                           "<img src=\"".base_url()."images/$pic\" alt=\"Image\" \"width='160' height='159'\"></img>".
+                            "</a>";
+          								echo '<div>'.
           									'<p>';
-          										echo "<h4>" . $row['id'] . ':' . $row['name'] . "</h4>";
-                              echo '<p>'. $row['solution'] .'</p>'.'<br>';
-                              echo '<p>'.$row['ingredient'].'</p>';
+                              echo "<input type=".'submit'.' value='.$row['id'].':'.$row['name'].'>';
+          										//echo "<h3>" . $row['id'] . ':' . $row['name'] . "</h3>";
+                              echo "<input type='text' name='id' value='".$row['id']."'hidden>";
+                              //echo '<h5>'. $row['solution'] .'</h5>';
+                              //echo '<h5>'.$row['ingredient'].'</h5>';
           			echo						'</p>'.
-          								'</div>'.
-          							'</li>';
+          								'</div>';
+          							echo '</li>';
+                        echo "</form>";
 
 
 			//	echo "<p>" . $row['detail']  .  "</p>";
