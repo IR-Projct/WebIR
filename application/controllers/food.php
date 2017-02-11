@@ -21,20 +21,8 @@ class Food extends CI_Controller {
 	public function index()
 	{
 		$this->load->view('top');
-		$this->load->view('documentPreparing');
+		//$this->load->view('documentPreparing');
 		$this->load->view('homepage');
-		$this->load->view('bot');
-	}
-
-	public function search()
-	{
-		$name = isset($_POST['name_search'])?$_POST['name_search']:"";
-		//var_dump($name);
-		$this->load->model('models');
-		$result=$this->models->show_list($name);
-		$data = array("data_result"=>$result);
-		$this->load->view('top');
-		$this->load->view('list_food',$data);
 		$this->load->view('bot');
 	}
 	public function answer()
