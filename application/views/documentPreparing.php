@@ -28,7 +28,7 @@
 
                 //1. Thai word segmentation
 
-                $result_segment = split_sentence($row['ingredient'],$segment);
+                $result_segment = split_sentence($row['name'],$segment);
                 //echo '<h3> Doc ' . $row['id'] . ': ' . $row['name'] . '</h3>';
 
                 //2. Thai stopword removal

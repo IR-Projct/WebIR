@@ -22,7 +22,7 @@
             // echo $word . '|';
              //get document id containing each query word
              if($invertedIndex[$word]==NULL){
-               
+
              }else {
                $docList .= ';' . $invertedIndex[$word];
              }
@@ -51,7 +51,24 @@
 	       //show each relevance document
 	      $arr = $rs->fetch_all(MYSQLI_ASSOC);
 	      foreach($arr as $row) {
-				echo "<h4>" . $row['id'] . ':' . $row['name'] . "</h4>";
+
+          echo '<div class="body">'.
+          				'<div id="content">'.
+          					'<div>'.
+          						'<ul>'.
+          							'<li>'.
+          								'<a href="index.html"><img src="images/fried-chicken.jpg" alt="Image"></a>'.
+          								'<div>'.
+          									'<h3><a href="featured.html">This is just a place holder</a></h3>'.
+          									'<p>';
+          										echo "<h4>" . $row['id'] . ':' . $row['name'] . "</h4>";
+                              echo '<p>'. $row['solution'] .'</p>'.'<br>';
+                              echo '<p>'.$row['ingredient'].'</p>';
+          			echo						'</p>'.
+          								'</div>'.
+          							'</li>';
+
+
 			//	echo "<p>" . $row['detail']  .  "</p>";
 		 }
 
