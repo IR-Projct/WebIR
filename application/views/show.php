@@ -7,7 +7,7 @@
 					<div>
 					<div>
 						<?php foreach($data_result->result_array() as $row){
-							$pic=$row['id'].'.jpg';
+							$pic=$row['img'].'.jpg';
 							echo '<h3>'.$row['name'].'</h3>';
 							echo "<img src=\"".base_url()."images/$pic\" alt=\"Image\" ></img>";
 							echo "<h5>"."INGREDIENTS"."</h5>";

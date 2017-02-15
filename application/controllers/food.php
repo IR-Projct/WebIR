@@ -33,8 +33,8 @@ class Food extends CI_Controller {
 	}
 	public function show()
 	{
-		$id=(isset($_POST["id"])?$_POST["id"]:"");
-		echo "value : ".$id;
+		$id=(isset($_REQUEST["id"])?$_REQUEST["id"]:"");
+		//echo "value : ".$id;
 		$this->load->view('top');
 		$this->load->model('models');
 		$result=$this->models->show($id);

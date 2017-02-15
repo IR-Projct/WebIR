@@ -31,7 +31,7 @@
        $eachDoc = array_unique($eachDoc);
 
        //select from the database
-       $sql = "SELECT * FROM food WHERE ";
+       $sql = "SELECT * FROM food JOIN region on food.region_id = region.region_id JOIN cook_type on food.type_id = cook_type.type_id  WHERE ";
        foreach ($eachDoc as $docID) {
        	   if ($docID != '')
               $sql .= "id=" .'"'. $docID .'"'. " or ";
@@ -57,17 +57,18 @@
                     '<ul>';
 	      foreach($arr as $row) {
           $pic=$row['img'].'.jpg';
-          echo '<form method="POST" action="'.site_url('food/show/'.$row['id']).'">';
+          //echo '<form method="POST" action="'.site_url('food/show/'.$row['id']).'">';
           //echo "<form method=".'POST'."action=".site_url('food/show'.$row['id']).'>';
           							echo '<li>';
-                        echo "<a href=\"index.html\">".
+                        echo "<a href=".'show/'.'?'.'id'.'='.$row['id'].'>'.
                            "<img src=\"".base_url()."images/$pic\" alt=\"Image\" \"width='160' height='159'\"></img>".
                             "</a>";
           								echo '<div>'.
           									'<p>';
-                              echo "<input type=".'submit'.' value='.$row['id'].':'.$row['name'].'>';
-          										//echo "<h3>" . $row['id'] . ':' . $row['name'] . "</h3>";
-                              echo "<input type='text' name='id' value='".$row['id']."'hidden>";
+                              //echo "<input type=".'submit'.' value='.$row['id'].':'.$row['name'].'>';
+          										echo "<a href=".'show/'.'?'.'id'.'='.$row['id'].'>'."<h3>" . $row['name'] . "</h3>".'</a>';
+                              echo "<p>".'อาหารภาค :'.$row['region'].'<br>'.'ประเภท :'.$row['type']."</p>";
+                              //echo "<input type='text' name='id' value='".$row['id']."'hidden>";
                               //echo '<h5>'. $row['solution'] .'</h5>';
                               //echo '<h5>'.$row['ingredient'].'</h5>';
           			echo						'</p>'.

@@ -87,23 +87,23 @@
 				<h3>รายการแนะนำ</h3>
 				<ul id="featured">
 					<li>
-						<a href="recipes.html"><img src="<?php echo base_url()?>images/sandwich.jpg" alt="Image"></a>
+						<a href="recipes.html"><img src="<?php echo base_url()?>images/f006.jpg" width="75" height="75" alt="Image"></a>
 						<div>
-							<h2><a href="recipes.html">Ham Sandwich</a></h2>
+							<h2><a href="recipes.html">หมูปิ้งสูตรกระทิ</a></h2>
 							<span>by: Anna</span>
 						</div>
 					</li>
 					<li>
-						<a href="recipes.html"><img src="<?php echo base_url()?>images/biscuit-and-coffee.jpg" alt="Image"></a>
+						<a href="recipes.html"><img src="<?php echo base_url()?>images/Fn6.jpg" width="75" height="75" alt="Image"></a>
 						<div>
-							<h2><a href="recipes.html">Biscuit &amp; Sandwich</a></h2>
+							<h2><a href="recipes.html">แกงส้มใส่ปลาตูน</a></h2>
 							<span>by: Sarah</span>
 						</div>
 					</li>
 					<li>
-						<a href="recipes.html"><img src="<?php echo base_url()?>images/pizza.jpg" alt="Image"></a>
+						<a href="recipes.html"><img src="<?php echo base_url()?>images/Fs17.jpg" width="75" height="75" alt="Image"></a>
 						<div>
-							<h2><a href="recipes.html">Delicious Pizza</a></h2>
+							<h2><a href="recipes.html">ขนมจีนน้ำยากระทิ</a></h2>
 							<span>by: Rico</span>
 						</div>
 					</li>
