@@ -42,6 +42,15 @@ class Food extends CI_Controller {
 		$this->load->view('show',$data);
 		$this->load->view('bot');
 	}
+	public function list_all()
+	{
+		$this->load->model('models');
+		$result=$this->models->all();
+		$data=array("data_result"=>$result);
+		$this->load->view('top');
+		$this->load->view('show_list',$data);
+		$this->load->view('bot');
+	}
 	public function list_n()
 	{
 		$this->load->model('models');

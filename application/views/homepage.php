@@ -34,7 +34,7 @@
 			</div>
 			<div class="body">
 				<div>
-					<a href="<?php echo base_url();?>"><img src="<?php echo base_url()?>images/thai-food.jpg" alt="Image"></a>
+					<a href="<?php echo site_url('food/list_all')?>"><img src="<?php echo base_url()?>images/thai-food.jpg" alt="Image"></a>
 				</div>
 				<ul>
 					<li class="current">

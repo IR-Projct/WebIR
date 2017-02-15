@@ -16,6 +16,13 @@ class models extends CI_Model {
     $query = $this->db->query($sql);
     return $query;
   }
+  public function all()
+  {
+
+    $sql = "SELECT * FROM food f JOIN region r on f.region_id = r.region_id JOIN cook_type on f.type_id = cook_type.type_id ";
+    $query = $this->db->query($sql);
+    return $query;
+  }
   public function n()
   {
 
