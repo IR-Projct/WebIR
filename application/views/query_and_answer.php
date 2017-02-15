@@ -2,7 +2,7 @@
 
   <?php
     include "utility.php";
-
+    error_reporting(0);
     if (($_POST)&&($_POST['query']!= '')) {
 
        $time_start = microtime(true);
@@ -81,6 +81,9 @@
 		 }
 
 		}
+    else {
+      echo "<div align='center'><h3><font size='6'>ไม่พบผลลัพธ์ที่ต้องการ</font><h3></div>";
+    }
 		$con->close();
 
 
