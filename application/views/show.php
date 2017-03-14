@@ -11,16 +11,16 @@
 							echo '<h3>'.$row['name'].'</h3>';
 							echo "<img src=\"".base_url()."images/$pic\" alt=\"Image\" ></img>";
 							echo "<h5>"."INGREDIENTS"."</h5>";
-							echo '<ol class='."ingredients".'>'.
-								'<li>';
+							echo '<ol class='."ingredients".'>';
+								//'<li>';
 									echo $row['ingredient'];
-								echo "</li>";
+								//echo "</li>";
 							echo "</ol>";
 							echo "<h5>Solution</h5>";
 							echo '<ol class='."directions".'>';
-								echo "<li>";
+								//echo "<li>";
 									echo $row['solution'];
-								echo "</li>".
+								echo //"</li>".
 							"</ol>".
 						"</div>".
 					"</div>".

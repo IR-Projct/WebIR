@@ -90,21 +90,21 @@
 						<a href="index.php/food/show/?id=f006"><img src="<?php echo base_url()?>images/f006.jpg" width="75" height="75" alt="Image"></a>
 						<div>
 							<h2><a href="index.php/food/show/?id=f006">หมูปิ้งสูตรกระทิ</a></h2>
-							<span>by: Anna</span>
+							<span>by: admin</span>
 						</div>
 					</li>
 					<li>
 						<a href="index.php/food/show/?id=f083"><img src="<?php echo base_url()?>images/Fn6.jpg" width="75" height="75" alt="Image"></a>
 						<div>
 							<h2><a href="index.php/food/show/?id=f083">แกงส้มใส่ปลาตูน</a></h2>
-							<span>by: Sarah</span>
+							<span>by: admin</span>
 						</div>
 					</li>
 					<li>
 						<a href="index.php/food/show/?id=f095"><img src="<?php echo base_url()?>images/Fs17.jpg" width="75" height="75" alt="Image"></a>
 						<div>
 							<h2><a href="index.php/food/show/?id=f095">ขนมจีนน้ำยากระทิ</a></h2>
-							<span>by: Rico</span>
+							<span>by: admin</span>
 						</div>
 					</li>
 				</ul>

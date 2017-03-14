@@ -32,19 +32,19 @@ class models extends CI_Model {
   }
   public function c()
   {
-    $sql = "SELECT * FROM food f JOIN region r on f.region_id = r.region_id JOIN cook_type on f.type_id = cook_type.type_id WHERE f.region_id = 'r1'";
+    $sql = "SELECT * FROM food f JOIN region r on f.region_id = r.region_id JOIN cook_type on f.type_id = cook_type.type_id WHERE f.region_id = 'r2'";
     $query = $this->db->query($sql);
     return $query;
   }
   public function e()
   {
-    $sql = "SELECT * FROM food f JOIN region r on f.region_id = r.region_id JOIN cook_type on f.type_id = cook_type.type_id WHERE f.region_id = 'r1'";
+    $sql = "SELECT * FROM food f JOIN region r on f.region_id = r.region_id JOIN cook_type on f.type_id = cook_type.type_id WHERE f.region_id = 'r3'";
     $query = $this->db->query($sql);
     return $query;
   }
   public function s()
   {
-    $sql = "SELECT * FROM food f JOIN region r on f.region_id = r.region_id JOIN cook_type on f.type_id = cook_type.type_id WHERE f.region_id = 'r1'";
+    $sql = "SELECT * FROM food f JOIN region r on f.region_id = r.region_id JOIN cook_type on f.type_id = cook_type.type_id WHERE f.region_id = 'r4'";
     $query = $this->db->query($sql);
     return $query;
   }

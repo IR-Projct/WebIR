@@ -10,7 +10,7 @@
     <a href="<?php echo base_url();?>"><img src="<?php echo base_url()?>images/logo.png" alt="Logo"></a>
   </div>
   <form action="<?php echo site_url('food/answer')?>" method="post" >
-    <input type="text" placeholder="Search from our 300+ Recipes around thailand" name="query" id="search">
+    <input type="text" placeholder="ค้นหาสูตรอาหารไทย" name="query" id="search">
     <input type="submit"  id="searchbtn">
   </form>
 </div>
