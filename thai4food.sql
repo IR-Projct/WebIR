@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 12, 2017 at 12:31 AM
+-- Generation Time: Mar 15, 2017 at 04:50 PM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.6.23
 
@@ -1020,14 +1020,14 @@ INSERT INTO `invertedindex` (`id`, `keyword`, `docID`) VALUES
 
 CREATE TABLE `region` (
   `region_id` varchar(3) NOT NULL,
-  `name` varchar(10) NOT NULL
+  `region` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `region`
 --
 
-INSERT INTO `region` (`region_id`, `name`) VALUES
+INSERT INTO `region` (`region_id`, `region`) VALUES
 ('r1', 'ภาคเหนือ'),
 ('r2', 'ภาคกลาง'),
 ('r3', 'ภาคอีสาน'),

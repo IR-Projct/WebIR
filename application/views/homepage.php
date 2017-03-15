@@ -27,9 +27,6 @@
 					<li>
 						<a href="<?php echo site_url('food/list_s')?>">ภาคใต้</a>
 					</li>
-					<li>
-						<a href="about.php">เกี่ยวกับเรา</a>
-					</li>
 				</ul>
 			</div>
 			<div class="body">
